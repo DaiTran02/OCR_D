@@ -1,140 +1,138 @@
-# OCR Result: A61.33-020-01-0001-001.pdf
+# OCR Result: A61.33-020-01-0001-008.pdf
 
 ## Page 1
 
-Ký với: Văn phòng Ngày ký: 2025-06-29 13:52:57 +07:00.
-
-HỘI LHPN TỈNH VĨNH LONG BTV PHỤ NỮ H. MANG THỊT SỐ: 07/BC-PN
-
-CỘNG HOÀ XÃ HỘI CHỦ NGHĨA VIỆT NAM: Độc lập - Tự do - Hạnh phúc.
-
-Mang Thít, ngày 07 tháng 05 năm 2007 .
-
+HỘI LHPN T. VĨNH LONG CÔNG HÒA XÃ HỘI CHỦ NGHĨA VỊT:0AM07:00
+HỒI LHPN H. MANG THÍ Độc lập - Tự do - Hạnh phúc.
+Mạng thít: Ngày 19 tháng 11 năm 2009 ;.
+Số: 24/BC-PN.
 BÁO CÁO
-
-; Sơ kết bước 1 kế hoạch khảo sát, củng cố, nâng cao chất lượng hoạt động Hội phụ nữ cơ sở và hội viên năm 2007).
-
-- Thực hiện kế hoạch số 04/BDV của Ban Dân Vân Huyện Mang Thít ngày 24/01/2007 : Vị kiện toàn năng cao chất lượng mặt trận, các đoàn thể cơ sở và đoàn viên - hội viên ; BTV Hội LHPN Huyện xây dựng kế hoạch: .. Khảo sát, cũng cố năng cao chất lượng hoạt động Hội phụ nữ cơ sở và hội viên năm 2007 .
-
-Qua thực hiện bước 1 của kế hoạch BTV phụ nữ, Huyện tổng hợp báo cáo sơ kết cụ thể như sau :
-
-A/. KẾT QUẢ KHẢO SÁT :
-
-- Ban TV phụ nữ Huyện tổ chức khảo sát 31 chi hội và 12 Hội phụ nữ xã - TT có 562 hội viên tham dự trên tổng số 844 hội viên được khảo đạt 66,38%. Thông qua sinh hoạt chi, tổ hội và khảo sát về quản lý chỉ đạo của Hội phụ nữ cơ sở xã, thị trấn, Ban TV phụ nữ Huyện đánh giá mặt làm được và chưa được như sau :
-
-1. THỰC TRANG HOAT ĐỒNG CỦA HỘI PHỤ NỮ CỐ SỐ XÃ – TT :
-
-1. Về tập hợp hội viên : có 16 chi hội tập hợp hội viên đạt trên 70% điển hình như ấp An Hương 2 - MA, ấp Chánh - CA, ấp Phước - An Phước; 09 chi hội tập hợp hội viên đạt từ 50 - 70%; 06 chi hội tập hợp hội viên đạt dưới 50% như ấp Chợ - MA, ấp Tân An - TAH, ấp Gò Nhum - TLH.
-
-2. Về chương trình : Có 70,29% ( 22/31 chi hội giới thiệu chương trình làm việc của cuộc họp ).
-
-3. Về nội dung : Thể hiện quá ngắn gọn, chỉ thể hiện một vài nội dung công tác Hội ( Ví dụ: Chỉ thể hiện nội dung tuyên truyền hoặc hỗ trợ phụ nữ phát triển kinh tế gia đình ).
-
-- Nội dung sinh hoạt chưa phong phú, chưa có mô hình thu hút hội viên tham gia vào hội.
-
-4. Về công tác tổ chức Hội :
-
+THÀNH TÍCH HOẠT ĐỘNG HỘI PHỤ NỮ
+HUYỆN MANG THÍT NĂM 2009
+Kính gối : - Hội đồng thi đua khen thưởng huyện Mang Thít.
+Đơn thi đua khen thưởng tỉnh Vĩnh Long.
+Thực hiện Nghị quyết Huyên, kế hoạch công tác Ban Dân vận.
+Huyên Ủy và chương trình công tác năm 2009 của Hội LHPN tỉnh Vĩnh.
+Long. Ban chấp hành Hội LHPN huyện Mang Thít xây dựng kế hoạch cụ thể.
+và tổ chức thực hiện công tác Hội năm 2009 đã phấn đấu hoàn thành tốt.
+Nhiệm vụ công tác Hội thể hiện qua các mặt công tác như sau :
+A. THỰC HIỆN PHONG TRÀO THI ĐUA: . Phụ nữ tích cực học.
+tập, lao động sáng tạo, xây dựng gia đình hạnh phúc gắn với cuộc vận.
+Long. Ban chap hang Hoi LHP, huyen Mang Thit xay dung ke hoach cu he?
+động: Học tập và làm theo tấm gương đạo đức Hồ Chí Minh" ...
+Kết quả:
+-Tuyên truyền 830 cuộc, với 22.399 lượt người dự, có 1.133 chị đăng.
+ký, nâng tổng số đăng ký thực hiện phong trào thi đua đến nay là 18.819 chị .
+Kết quả bình xét có 16.826 chị đạt 3 chuẩn phong trào (trong đó cán bộ, hội.
+viên 16.033 đạt 92,2%; quần chúng phụ nữ 810 ), so kế hoạch năm đạt.
+103,5%.
+Thực hiện cuộc vận động: , Học tập và làm theo tấm gương đạo đức Hồ.
+Chí Minh đã tuyên truyền được 431 cuộc với 13.276 chị dự, trong các cuộc họp.
+Lên chí, tổ hội đã kể được 189 mẫu chuyên về tấm gương Bác Hồ, có 5.484 chị.
+Kết quả bình xét có 16.826 chị đạt 3 chuẩn phong trào (trong đó cán bộ, hội viên 16.033 đạt 92,2%; quần chúng phụ nữ 810) so kế hoạch năm đạt 103,5%.
+Thực hiện cuộc vận động : Học tập và làm theo tấm gương đạo đức Hồ Chí Minh, Hội tuyên truyền được 431 cuộc với 13.276 chị dự, trong các cuộc họp lệ chi, tổ hội đã kể được 189 mẫu chuyện về tấm gương Bác Hồ có 5.484 chi được nghe. Thực hiện theo đức tiết kiệm của Bác, Hội đã phát động trong cán bộ, hội viên xây dựng mô hình nuôi heo đất kiết kiệm trong cán bộ, hội viên và quần chúng phụ nữ có 100% cơ.
+sở thực hiện. Đến nay có 91/110 chi - hội có mô hình nuôi heo đất giúp phụ nữ nghèo có địa chỉ và 890 con heo đất tiết kiệm hộ gia đình, đã tổ chức mỗ 181 con với tổng số tiền là 145.699.000 đồng giúp cho 76 chị có điều kiện phát triển kinh tế gia đình.
+B. KẾT QUẢ THỰC HIỆN CÁC NHIỆM VU TRONG TÂM :
++ Về công tác tuyên truyền : Hội đã tổ chức tuyên truyền các Chỉ thị,.
+Nghị quyết của Đảng, chính sách, Pháp luật của Nhà nước; Nghị quyết Đại hội.
+Đại hội phụ nữ toàn quốc lần X: Nghị quyết-07/TW của Đoàn Chủ tịch.
+Tiết kiệm hộ gia đình, đã tổ chức mỗ 181 con với tổng số tiền là 145.699.000.
+đồng giúp cho 76 chị có điều kiện phát triển kinh tế gia đình.
 1
 
 ## Page 2
 
-- Nguồn phụ nữ từ 18 tuổi trở lên: 37.467.
-- Nguồn phát triển do phụ nữ xã - TT điều tra, báo cáo 24.467.
-- Hội viên đầu năm 15.311, hội viên khảo sát 14.610, phát triển 453 hội viên mới, hội viên giảm trong quí I là 1.154 (AP, MA, MP ).
-- Hội viên nồng cốt 6.935 đạt 47,4%.
-- Cán bộ hội : 175 ( XS : 77; khá : 43 ; TB : 16); còn các xã TLH, TAH chưa phân loại.
-- Trong đó : :
-+ Cấp I : 11.
-+ Cấp II : 72.
-+ Cấp III : 96.
-+ Đảng viên : 07.
-+ Đảng viên : 38.
-+ Học đối tượng Đảng : 07.
-+ Giới thiệu cho Đảng xem xét : 20.
-+ HĐND : .....
-+ Sơ cấp chuyên môn : 09.
-+ Trung cấp chuyên môn : 21.
-+ Cao đẳng - đại học : 04.
-+ Sơ cấp chính trị : 15.
-+ Trung cấp chính trị : 18.
-+ Hội phụ nữ cơ sở xã - TT : 13 (X.S : 08; K.H : 03 ; TB : 02 ).
-+ Tổng số chi hội 110 ( XS : 51 ; khá : 32 ; TB : 14) : BP chưa báo cáo phân loại chi hội.
-+ Tổng số tổ hội : 594 ( XS : 250; khá : 184; TB : 70 ) xã TLH, AP chưa phân loại.
-+ Số tổ vay vốn : 125 hộ vay 3.215, số tiền 15tỷ 364 triệu đồng.
-+ Tổ hùn vốn xoay vòng 408 thành viên 4.741, số tiền 3 tỷ 092 triệu đồng.
-+ CLB : 11 Thành viên 176.
-- Hội viên 14.610 ( XS : 4.489; khá : 3.020; TB : 2.013; yếu : 153) các xã chưa phân loại hội viên như : AP, CA, TLH, TAH, TTCN.
-- Hộ hội viên đạt chuẩn gia đình văn hóa : 6.484 ( các xã chưa báo số liệu : CH, BP, HT, TL, TLH, CA ).
-- Hội viên phụ nữ nghèo : 1.048 ( Chưa nắm được số liệu QCPN nghèo ).
-- Phụ nữ làm chủ hộ : 430 ( CA, TLH chưa báo số liệu ) chưa nắm được số liệu phụ nữ làm chủ hộ.
-5. Công tác quản lý :
+Trung ương Hội LHPN Việt Nam: Về một số vấn đề xã hội có liên quan đến phụ nữ - trẻ em ; tuyên truyền cuộc vận động:  Học tập và làm theo tấm gương đạo đức Hồ Chí Minh , Luật bình đẳng giới, luật phòng-chống bạo lực gia đình, luật thuế thu nhập cá nhân, luật NVQS, luật giao thông, phòng chống xâm hại tình dục trẻ em, luật thực hành tiết kiệm chống tham nhũng, tuyên truyền về kiến thức chăm sóc.
+Sức KHHGD, Chỉ thị 01 gắn với cuộc vận động : Toàn dân đoàn kết xây dụng đời sống văn hóa ở khu dân cư và ; Nếp sống văn minh nơi công cộng..; Tuyên truyền về kỷ niệm các ngày lễ lớn như : Mừng Đảng, mừng xuân, 8/3, 30/4 - 1/5, 19/5, 27/7, quốc khách 2/9, 20/10,...
+* Kết quả trong năm đã tuyên truyền được 3.176 cuộc với 86.921 lượt người dự đạt 141% so kế hoạch năm.
++ Công tác tham gia xây dựng phần biện xã hội và giám sát việc thực hiện luật pháp chính sách về bình đẳng giới: Tổ chức tuyên truyền về Nghị quyết số 11-NQ/TW của Bộ chính trị về phụ nữ thời kỳ công nghiệp hóa-hiện đại hóa đất nước được 383 cuộc với 10.553 lượt người dự .
+Phối hợp với các ban tham gia giải 149 vụ, thành 96 vụ, chuyển về trên 53 vụ.
++ Hoạt động hỗ trợ phụ nữ phát triển kinh tế, tạo việc làm, tăng thu nhập:
+Hàng năm Huyên Hội đều xây dựng kế hoạch giảm nghèo, kế hoạch xây dựng các mô hình phát triển kinh tế gia đình như : Mô hình nuôi heo đất giúp phụ nữ nghèo có địa chỉ, mô hình heo đất tiết kiệm hộ gia đình, vốn xoay vòng, ... Bên cạnh đổ Hội còn tranh thủ các nguồn vốn vay lãi suất thấp từ NHCSXH để giúp cho chị em có vốn phát triển kinh tế gia đình, tạo việc làm tăng thu nhập.
+Tổng nguồn vốn huy động trong năm 6.967.000.000d, nâng tổng dư nợ đến nay 38.137.000.000d giúp cho 4.373 hộ vay. Ngoài ra Hội còn vận động chị em thành lập tổ hùn vốn xoay vòng trong năm thành lập mới 109 tỗ, có 1.714 thành viên, với số tiền: 940.250.000đ. Nâng tổng đến nay có 281 tỗ, có 4.448 thành viên, với số tiền1.129.800.000 d giúp cho 4.448 chị được giúp.
+Phối hợp với các ngành chức năng : Trung tâm dạy nghề , Nông Nghiệp , Khuyến nông,... mở được 34 lớp , có 957 chị dự : Kỷ thuật trồng củ cải trắng, phòng trừ dịch bệnh trên cây trồng, vật nuôi, chăn nuôi, đan thăm lụt bình, đan giỏ bằng dây nilon,...
+Từ những hoạt động trên đã giúp cho 182 hội viên phụ nữ thoát nghèo năm 2009 , trong đó có 44 phụ nữ làm chủ hộ.
++ Hỗ trợ phụ nữ xây dụng gia đình no ấm, bình đẳng, tiến bộ, hạnh phúc , gắn với phong trào toàn dân xây dụng đời sống văn hóa :
+Tuyên truyền, vận động chị em xây dựng gia đình: ấm, bình đẳng, tiến bộ và hạnh phúc gắn với Chỉ thị 01 của Tỉnh Vĩnh Long, về chăm sóc.
+2
 
 ## Page 3
 
-- Ban TV, BCH phụ nữ cơ sở có quan tâm đến công tác quản lý sổ sách hưởng dẫn, có danh sách HV, danh sách nguồn phụ nữ trong độ tuổi, có danh sách hội viên phụ nữ nghèo, phụ nữ làm chủ hộ, số theo dõi phong trào thi đua do TW Hội phát động.
-- Có theo dõi thu - chi hội phí, trích nộp hội phí theo qui định.
-II. NHÂN XÉT DÁNH GIÁ :
-I. Mặt làm được :
-- Cung cấp được sổ sách theo yêu cầu kế hoạch khảo sát.
-- Thể hiện được công tác quản lý hội viên, hội viên nồng cốt, nguồn phụ nữ trong độ tuổi, hội viên nghèo, phụ nữ làm chủ hộ.
-- Có đề ra chương trình công tác tháng, quí, năm và báo cáo định kỳ theo qui định.
-- Thể hiện được sự quan tâm thực hiện các nhiệm vụ trọng tâm của công tác Hội.
-- Xây dựng qui chế làm việc và phân công BCH.
-* Nguyên nhân : 1.
-- Sự nổ lực quyết tâm cao của BCH, BTV Hội phụ nữ cơ sở.
-- Nhờ sự quan tâm chỉ đạo của cấp, sự hỗ trợ của chính quyền và các ngành có liên quan.
-- Được sự đồng tình ủng hộ của cán bộ hội, hội viên tích cực chuẩn bị khi được sắp xếp khảo sát.
-2. Mặt chưa làm được :
-- Quản lý hội viên, hội viên nồng cốt, nguồn phụ nữ trong độ tuổi, phụ nữ nghèo, phụ nữ làm chủ hộ chưa chắc chẽ, chưa đúng mẫu biểu theo qui định.
-- Chưa phân định rõ giữa hội viên nồng cốt và hội viên xuất sắc, có cơ sở hội viên nồng cốt đạt chưa đến 30% (xã Tịnh 22,7%, TAH 15,1%).
-- Trong tổ chức thực hiện công tác chuyên môn chưa bám vào chương trình kế hoạch đề ra, chưa thể hiện hết nội dung công tác hội có nội bộ hắn phong trào thi đua do TW Hội phát động không thể hiện trong kế hoạch và báo cáo.
-- Tỷ lệ phát triển hội viên trong quí 1 còn quá thấp 453/2215 đạt 19,7% chỉ tiêu kế hoạch.
-- Nội dung sinh hoạt chi, tổ hội quá đơn giản có chi hội thông qua báo cáo tháng qua, phương hướng hoạt động tháng tới chỉ 1 vài dòng không thể hiện hết nội dung công tác Hội.
-* Nguyên nhân : 1.
-3
+SKKHHGĐ, kiến thức nuôi con dạy con ngoan, kiến thức về VSATTP ...Kết quả tuyên truyền 559 cuộc, có 8.549 lượt người dự. Qua đó có 17.392 hộ cán bộ, hội viên đạt 4 chuẩn mực gia đình văn hóa khu dân cư. Với phương châm đổi mới nội dung, phương thức hoạt động nhằm để thu hút hội viên tham gia, tạo khí thế sinh động. Hội đã tổ chức thành lập nhiều mô hình câu lạc bộ thu hút hội viên như:
++ Câu lạc bộ gia đình văn hóa: 15 câu lạc bộ có 382 thành viên, đạt 115,38% kế hoạch năm. Nâng tổng số đến nay 52 CLB với 1.618 thành viên; + Câu lạc bộ không sinh con thứ 3: thành lập mới 03 CLB, có 95 thành viên .Nâng tổng số 25 CLB với 649 thành viên.
++ Câu lạc bộ PCBLGD- BDG : 12: có 326 TV.
+hình câu lạc bộ thu hút hội viên như:
++ Câu lạc bộ gia đình văn hóa: 15 câu lạc bộ có 382 thành viên, đạt.
+115,38% kế hoạch năm. Nâng tổng số đến nay 52 CLB với 1.618 thành viên;.
++ Câu lạc bộ không sinh con thứ 3: thành lập mới 03 CLB, có 95 thành viên.
+viên .Nâng tổng số 25 CLB với 649 thành viên.
++ Câu lạc bộ GDHP: 01, có 56 TV. nâng tổng số 07 CLB, có 246 TV.
++ Câu lạc bộ DCTT: 03 với 54 thành viên, nâng tổng số 14 CLB, 292 thành viên.
++ Câu lạc bộ 06 không 3 sạch: có 06 CLB, với 145 thành viên.
++ Câu lạc bộ tiền hôn nhân có 01 CLB, với 15 thành viên.
++ Thành lập mới 01 tổ không có người thân hút thuốc lá có 20 thành viên, nâng tổng số 04 tổ có 68 thành viên tham gia.
+Phối hợp với Trung tâm Dân số-KHHGĐ thực hiện tốt chiến dịch truyền.
+thông vận động lồng ghép dịch vụ chăm sóc sức sinh sản-kế hoạch hóa.
+đạt I II/2009. Kết quả vấn động khám phụ khoa: 5 984. Điều trị và cấp thuốc.
+Phối hợp với Trung tâm Dân số-KHHGĐ thực hiện tốt chiến dịch truyền thông vận động lồng ghép dịch vụ chăm sóc sức sinh sản-kế hoạch hóa đọt I, II/2009. Kết quả vận động: khám phụ khoa: 5.984, điều trị và cấp thuốc miễn phí cho 2.730 chi, thực hiện các biện pháp tránh thai hiện đại: 10.278; khám và tiêm ngừa thai cho: 940 chi; tiêm ngừa viêm gan: 1.585 chi; tiêm chủng trẻ đủ liều: 1.105 trẻ; lập.
+danh sách chuyển tuyến:50 chi; Truyền thông kiến thức sàng lọc trước và sau sinh được 41 cuộc có 679 chi dự.
+Thực hiện cuộc vận động ứng hộ quỹ "Mái ấm tình thương" do Trung ương Hội LHPN Việt Nam phát động, trong năm đã vận động xây cất 02 căn nhà mái ấm tình thương cho hội viên nghèo khó khăn về nhà ở số tiền là 30 triệu đồng (xã An Phước và xã Binh Phước).
+Nhằm giúp chị em nâng cao kiến thức về mọi mặt, Hội LHPN huyện đã kết hợp với thư viện huyện tổ chức buổi phát động phong trào đọc sách báo.
+Nhằm giúp chị em nâng cao kiến thức về mọi mặt Hội LHPN Huyên đã kết hợp với thư viện Huyên tổ chức buổi phát động phong trào độc sách báo có 150 cán bộ-hội viên phụ nữ tham dự, với chủ đề 64 năm cách mạng tháng 8 và quốc khánh 2/9. Kết quả qua phát động đến nay có 10/13 cơ sở Hội có tủ sách.
+Phối hợp với Quỹ Unitever (bột giặt Lifeboye) tổ chức tuyên truyền về chăm sóc sức về sinh cá nhân nhằm ngăn ngừa, phòng tránh các bệnh nhiễm khuẩn nhất là cúm A H1N1 và các bệnh giun sân thường-gặp. Đồng thời nâng cao nhận thức về lợi ích của việc rửa tay bằng xà phòng để bảo vệ sức cá nhân, gia đình và công đồng, đã tổ chức truyền thông 12 cuộc có 2.500 em học sinh tiêu học, 3.850 cán.
+bộ-hội viên-quần chúng phụ nữ tham gia. Phối hợp với chương trình hỗ trợ Phụ nữ Việt Nam cùng tiến bộ do Hội LHPNVN và.
 
 ## Page 4
 
-- Ban TV Hội phụ nữ xã - TT chưa thật sự quan tâm đến phong trào Hội ở cơ sở.
-- Chưa duy trì được chế độ sinh hoạt lệ của BCH, chi, tổ hội theo điều lệ qui định.
-- Trình độ, năng lực của chi, tổ hội còn hạn chế nên chưa tự lực để ra kế hoạch hoạt động, đều hành tốt các cuộc họp hội.
-B/. NHỮNG VĂN ĐỀ CẦN LƯU Ý TRONG THUỐC HIỆN BƯỚC 2 :
-- Tiếp tục thực hiện kế hoạch, cũng cố nâng chất lượng hoạt động Hội PN cơ sở và hội viên từ nay đến 20/10/2007 tổng kết kế hoạch trong quá trình tổ chức thực hiện, BTV phụ nữ đề nghị Hội phụ nữ cơ sở xã - TT lưu ý những nội dung cơ bản như sau :
-I. Công tác quản lý :
-- Rà soát nắm lại số lượng hội viên, nâng chất lượng hoạt động HV nồng cốt.
-- Đánh giá đúng chất thực trạng cơ sở chi, tổ hội có kế hoạch cũng cố cụ thể.
-- Tập trung cũng cố tổ chức Hội, phát triển hội viên.
-- Số sách quản lý HV, thu - chi hội phí, BCH đúng mẫu qui định gồm các lọai số :
-* Số quản lý hội viên - hội viên nông cốt - Hv cấp thể.
-* Số quản lý BCH.
-* Số ghi biến bản hợp BCH.
-* Số báo cáo: + Chương trình công tác tháng, quí, năm;.
-* Số theo dõi thu chi hội phí - quý hội.
-* Số quản lý hội viên nghèo, phụ nữ làm chủ hộ.
-* Số theo dõi đăng ký và bình xét thi dua phong trào do Tư Hội phát động.
-* Số theo dõi quản lý vốn vay- tố hùn vốn xoay vòng.
-* Số theo dõi HV, QCPN đăng ký dưỡng ký không sinh con thứ 3.
-* Số theo dõi Hv thực hiện gia đình theo 4 chuẩn mực: No ấm, bình đẳng, tiến bộ, hạnh phúc " và thực hiện nếp sống văn hóa ở khu dân cư.
-2. Cũng cố tổ chức và phát triển hội viên :
-- BTV Phụ nữ huyện tiến hành cũng cố nâng chất lượng hoạt động 2 đơn vị TTCN - TAH từ khá lên mạnh theo kế hoạch 2007.
-- Cũng cố hội phụ nữ xã Tân Long từ trung bình lên khá.
-- Hội phụ nữ cơ sở xã - TT chọn nâng chất lượng hoạt động chi hội ít nhất 2 chi hội khá lên mạnh, 2 chi hội trung bình lên khá.
+43
+Công ty P&G thực hiện đã cấp tăng sản phẩm bột giặt Tide miễn phí cho 23.352 !
+hộ dân trong toàn huyện.
+Ngoài ra, hội còn phối hợp với các ngành, đoàn thể vận động các mạnh.
+thường quân, các nhà hảo tâm hỗ trợ tiền, quà giúp đỡ gia đình, trẻ em nghèo,.
+có hoàn cảnh khó khăn 2.908 phần quà số tiền là 126.435.000đ.
+Hội xây dụng kế hoạch tuyển quân : Từ đầu năm và có công văn chỉ đạo.
+đạo cụ thể trong thời gian tuyển quân, phối hợp xây dựng báo cáo 5 năm thực.
+hiện chương trình phối hợp giữa Hội LHPN và QDNDVN.
+Tham gia thực hiện tốt công tác tuyển quân với Hội đồng xét duyệt nghĩa.
+vụ quân sự như xây dụng kế hoạch tuyển truyền vận động tham gia xét duyệt,.
+Bình nghị, vận động gia đình có con em trúng tuyển sẵn sàng lên đường làm tròn.
+nghĩa vụ quân sự, thâm nhập từng gia đình thanh niên. Kết quả dưa quân đạt.
+100% chỉ tiêu trên giao. Để động viên tinh thần cho tân binh lên đường nhập.
+Ngũ, Hội phối hợp với các ngành, đoàn thể vận động tiền, quà cho tân binh số.
+tiên 16.450.000đ.
++ Xây dụng, phát triển tổ chức hội vững mạnh:
+- Luôn quan tâm hướng về cơ sở xây dựng, tổ chức Hội vững mạnh.
+- Hội thường xuyên duy trì chế độ hợp lệ ban chấp hành, chi tổ hội.
+được 879 cuộc với 17.667 chị dự.
+- Ban chấp hành: 26 đ/c, xuất sắc 24; khá 02.
+- 13 Hội phụ nữ cơ sở xã - TT : Xuất sắc : 11; khá : 2 ;.
+- Chỉ, tổ hội 110 : Xuất sắc : 63; vững mạnh : 41; trung bình : 06.
+- Trong năm phát triển mới 1.133/1.115 đạt 101,6% so kế hoạch năm.
+- Thu hội phí 68.878.000đ đạt 98,5%.
+- Trong năm giới thiệu cho Đảng xem xét 29 chị, kết nạp được 15 chị.
+Nhân dịp tết Nguyên Đán, Hội kết hợp với ban ngành đoàn thể thăm.
+viếng tặng 163 phần quà cho gia đình chính sách. Riêng huyện Hội tổ chức thăm.
+và tăng quà cho con em gia đình chính sách 04 phần quà, số tiền 500.000 đ.;.
+thăm cán bộ hội khó khăn tăng 53 phần quà, số tiền 3.430.000đ, nhân dịp 8/3 và.
+20/10 Hội phụ nữ huyện và cơ sở vận động và xuất quỹ tăng 485 phần quà,.
+với tổng trị giá 24.895.000đ.
+Với thành tích đạt được, năm 2009 Hội phụ nữ huyện đề nghị khen.
+Thưởng 09 tập thể và 11 cá nhân về TW Hội LHPN Việt Nam , Hội LHPN.
+Tỉnh và UBNĐ Tỉnh tặng bằng khen.
++ Công tác đối ngoại : Tiếp tục tuyên truyền các chính sách đối ngoại.
+của Đảng, Nhà nước và của Hội trong cán bộ, hội viên và quản chúng phụ nữ.
+Thực hiện các chương trình dự án: Hội phụ nữ xã Chánh An duy trì và.
+Quản lý tốt quỹ bình đăng giới, số tiền là 50 triệu, hỗ trợ 25 chị có vốn sản xuất.
+- Phát triển kinh tế gia đình . Tranh thủ Hội hữu nghị Vĩnh Long dự án nuôi bò.
+vỗ béo xã Mỹ An, kinh phí 350 triệu đồng, do Tổ chức Phi chính phủ.
+Vietnam Relief Effort (VRE) - Hoa Kỳ tài trợ. Vận động 01 Việt kiều Đức về.
 4
 
 ## Page 5
 
-- Phát triển hội viên.đạt 75% / tổng nguồn phụ nữ trong độ tuổi, đảm bảo chất lượng.
-- Tập huấn công tác chuyên môn hội, sinh hoạt lại điều lệ cho hội viên, xây dựng hội viên nồng cốt đạt 60% theo kế hoạch.
-- Mỗi xã xây dựng 1 câu lạc bộ gia đình văn hóa theo tiêu chí mới (lựa chọn ấp điểm CT/01 của xã).
-- Tổ chức thực hiện công tác chuyên môn phải căn cứ vào sự chỉ đạo của hội LH phụ nữ cấp trên, tiêu chuẩn thi đua do Tỉnh hội phát động và chương trình công tác của cấp cùng cấp.
-
-Trên đây là báo cáo sơ kết bước một : kế hoạch khảo sát cũng cố nâng cao chất lượng Hội phụ nữ cơ sở và hội viên năm 2007" và một số vấn đề cần lưu ý thực hiện trong bước hai. Để nghị Hội phụ nữ cơ sở nghiên cứu đóng góp để bảo cáo và kế hoạch được chính hơn.
-
-TM: BTV PHỤ NỘ HUYỆN
-CHỦ TỊCH
-BCH
-HỘI LỆN
-PHỤ NỘ
-PHU NỘ
-PHUỆN
-PHU
+thăm quê hương tặng 55 phần quà cho hộ nghèo, số tiền là 7.800.000 đ (xã Mỹ. phước và Bình phước).
+Với kết quả đạt được, năm 2009 do tập thể hội LHPN huyện luôn đoàn kết, phát huy nội lực, có nhiều sáng kiến trong tổ chức thực hiện các mặt trọng tâm như: Tổ chức thành lập các loại hình câu lạc bộ GĐVH, CLB-PCBLGB, CLB 6 không - 3 sạch, CLB phòng chống bạo lực gia đình,... được Tỉnh Hội công nhận, cuối năm xếp loại xuất sắc.
+Trên đây là thành tích đạt được trong năm 2009 của Hội LHPN Huyên Mang Thít.
+xác nhận: Ban Dân Vận.
+PHAN THANH MAI
+5

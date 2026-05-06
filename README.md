@@ -24,6 +24,13 @@ python -m pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
+##
+Model you should install
+https://huggingface.co/PaddlePaddle/PaddleOCR-VL-1.5
+
+Used https://huggingface.co/bmd1905/vietnamese-correction-v2 if you have gpu
+
+
 ## Run
 
 1. Put scanned PDF files into `input/`.
