@@ -7,13 +7,16 @@ from pathlib import Path
 
 from pdf2image import convert_from_path
 
-from postprocess import generate_clean_output
+from ollama_correct import correct_markdown_file
+from postprocess import write_docx
 from utils import (
+    OCR_VARIANT_ORDER,
     build_ocr_image_variants,
     call_paddle_ocr,
     clean_ocr_text,
     ensure_directories,
     image_to_base64,
+    is_runaway_ocr_text,
     load_settings,
     merge_ocr_text_chunks,
     score_ocr_text,
@@ -27,6 +30,7 @@ INPUT_DIR = BASE_DIR / "input"
 OUTPUT_DIR = BASE_DIR / "output"
 OUTPUT_FILE = OUTPUT_DIR / "output.md"
 OUTPUT_CLEAR_FILE = OUTPUT_DIR / "output_clear.md"
+OUTPUT_DOCX_FILE = OUTPUT_DIR / "output_clear.docx"
 
 # Always-slice configuration.
 SEGMENT_COUNT = 5       # Number of vertical slices per page.
@@ -40,6 +44,11 @@ SLICE_OVERLAP = 0.30   # Overlap ratio between adjacent slices.
 MAX_VARIANT_WORKERS = 6
 MAX_SLICE_WORKERS = SEGMENT_COUNT
 MAX_PAGE_WORKERS = 2
+
+# Variants that won on real pages. The other two are only OCR'd when this
+# probe comes back weak (blank page, failed read, very little text).
+PRIMARY_VARIANT_NAMES = ("sharpened", "threshold", "soft_contrast", "opencv_adaptive")
+STRONG_VARIANT_SCORE = 250.0
 
 
 def find_pdf_files(input_dir: Path) -> list[Path]:
@@ -124,6 +133,12 @@ def _extract_full_text_by_slicing(
             image_b64=image_b64,
         )
         chunk_text = clean_ocr_text(extracted)
+        if is_runaway_ocr_text(chunk_text):
+            print(
+                f"    * Slice {variant_name}#{chunk_index}/{total}: "
+                f"rejected runaway text ({len(chunk_text)} chars)"
+            )
+            return chunk_index, ""
         print(f"    * Slice {variant_name}#{chunk_index}/{total}: chars={len(chunk_text)}")
         return chunk_index, chunk_text
 
@@ -151,16 +166,34 @@ def _process_page(
 ) -> tuple[int, str]:
     """Process a single page and return (page_number, extracted_text)."""
     print(f"  - Page {page_number}/{total_pages}")
-    variants = build_ocr_image_variants(image)
 
-    # Step 1: Select the best preprocessing variant via concurrent full-page OCR.
-    print(f"    [Step 1] Selecting best variant for page {page_number} ({MAX_VARIANT_WORKERS} concurrent)...")
+    # Step 1: Score the variants that usually win. Only OCR the rest when the
+    # probe score is too low to trust.
+    print(f"    [Step 1] Selecting best variant for page {page_number}...")
+    primary_variants = build_ocr_image_variants(image, names=PRIMARY_VARIANT_NAMES)
     best_name, best_variant_image, full_page_text, full_page_score = _select_best_variant(
         image=image,
-        variants=variants,
+        variants=primary_variants,
         api_base_url=api_base_url,
         model_name=model_name,
     )
+    if full_page_score < STRONG_VARIANT_SCORE:
+        fallback_names = tuple(name for name in OCR_VARIANT_ORDER if name not in PRIMARY_VARIANT_NAMES)
+        print(f"    [Step 1] Probe score {full_page_score:.2f} is low; trying {', '.join(fallback_names)}")
+        fallback_variants = build_ocr_image_variants(image, names=fallback_names)
+        fallback_name, fallback_image, fallback_text, fallback_score = _select_best_variant(
+            image=image,
+            variants=fallback_variants,
+            api_base_url=api_base_url,
+            model_name=model_name,
+        )
+        if fallback_score > full_page_score:
+            best_name, best_variant_image, full_page_text, full_page_score = (
+                fallback_name,
+                fallback_image,
+                fallback_text,
+                fallback_score,
+            )
     print(f"    -> Best variant: {best_name} (score={full_page_score:.2f}, chars={len(full_page_text)})")
 
     # Step 2: Always slice the best variant concurrently to capture the full content.
@@ -186,9 +219,14 @@ def _process_page(
 
 
 def process_pdf(pdf_path: Path, poppler_path: str, api_base_url: str, model_name: str) -> str:
-    start_time = time.time()
     print(f"Processing PDF: {pdf_path.name}")
     pages = convert_pdf_to_images(pdf_path=pdf_path, poppler_path=poppler_path)
+    return process_images(pages, title=pdf_path.name, api_base_url=api_base_url, model_name=model_name)
+
+
+def process_images(pages: list, title: str, api_base_url: str, model_name: str) -> str:
+    """OCR already-rendered page images and return the raw Markdown."""
+    start_time = time.time()
     total_pages = len(pages)
     print(f"  Total pages: {total_pages} | Page workers: {MAX_PAGE_WORKERS} | "
           f"Variant workers: {MAX_VARIANT_WORKERS} | Slice workers: {MAX_SLICE_WORKERS}")
@@ -205,7 +243,7 @@ def process_pdf(pdf_path: Path, poppler_path: str, api_base_url: str, model_name
     # Reassemble pages in original order.
     page_results.sort(key=lambda p: p[0])
 
-    markdown_sections: list[str] = [f"# OCR Result: {pdf_path.name}", ""]
+    markdown_sections: list[str] = [f"# OCR Result: {title}", ""]
     for page_number, page_text in page_results:
         markdown_sections.extend(
             [
@@ -218,7 +256,7 @@ def process_pdf(pdf_path: Path, poppler_path: str, api_base_url: str, model_name
 
     end_time = time.time()
     duration = end_time - start_time
-    print(f"Finished processing {pdf_path.name} in {format_duration(duration)}")
+    print(f"Finished processing {title} in {format_duration(duration)}")
 
     return "\n".join(markdown_sections).strip() + "\n"
 
@@ -254,12 +292,19 @@ def main() -> int:
             return 1
 
     OUTPUT_FILE.write_text("\n\n".join(all_results), encoding="utf-8")
-    generate_clean_output(OUTPUT_FILE, OUTPUT_CLEAR_FILE)
+    correct_markdown_file(
+        OUTPUT_FILE,
+        OUTPUT_CLEAR_FILE,
+        host=settings["OLLAMA_HOST"],
+        model=settings["OLLAMA_MODEL"],
+    )
+    write_docx(OUTPUT_CLEAR_FILE, OUTPUT_DOCX_FILE)
     end_total = time.time()
     
     print("-" * 30)
     print(f"OCR completed. Output saved to: {OUTPUT_FILE}")
     print(f"Cleaned output saved to: {OUTPUT_CLEAR_FILE}")
+    print(f"Word document saved to: {OUTPUT_DOCX_FILE}")
     print(f"Total time elapsed: {format_duration(end_total - start_total)}")
     print("-" * 30)
     return 0

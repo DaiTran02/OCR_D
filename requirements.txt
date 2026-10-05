@@ -3,9 +3,14 @@ requests==2.32.3
 python-dotenv==1.0.1
 openai==1.76.2
 transformers==4.51.3
-sentencepiece==0.2.0
-# Install torch with CUDA (do NOT use plain 'pip install torch' - it installs CPU-only):
-#   pip install torch==2.7.0 --index-url https://download.pytorch.org/whl/cu126
-torch==2.7.0
+sentencepiece==0.2.2
+# CPU wheels from PyPI cannot see the GPU. Install the CUDA build instead:
+#   pip install torch==2.9.0 --index-url https://download.pytorch.org/whl/cu130
+torch==2.9.0
 ftfy==6.3.1
 opencv-python-headless==4.11.0.86
+python-docx==1.1.2
+ollama==0.6.1
+fastapi==0.115.12
+uvicorn==0.34.2
+python-multipart==0.0.20

@@ -7,13 +7,14 @@ import re
 from difflib import SequenceMatcher
 from io import BytesIO
 from pathlib import Path
-from typing import Iterable
+from typing import Callable, Iterable
 
 import cv2
 import numpy as np
 import requests
 from dotenv import load_dotenv
 from PIL import Image, ImageFilter, ImageOps
+from requests.adapters import HTTPAdapter
 
 
 LOGGER = logging.getLogger(__name__)
@@ -37,6 +38,8 @@ def load_settings() -> dict[str, str]:
         "POPPLER_PATH": os.getenv("POPPLER_PATH", "").strip(),
         "PADDLE_API_URL": os.getenv("PADDLE_API_URL", "").strip().rstrip("/"),
         "MODEL_NAME": os.getenv("MODEL_NAME", "").strip(),
+        "OLLAMA_HOST": os.getenv("OLLAMA_HOST", "").strip().rstrip("/"),
+        "OLLAMA_MODEL": os.getenv("OLLAMA_MODEL", "").strip(),
     }
 
     missing = [key for key, value in settings.items() if not value]
@@ -53,10 +56,16 @@ def ensure_directories(paths: Iterable[Path]) -> None:
 
 
 def image_to_base64(image) -> str:
+    """Encode an OCR image as JPEG.
+
+    JPEG is several times smaller and faster to encode than PNG at these
+    resolutions, and the OCR server accepts it in the image data URL.
+    """
+    if image.mode not in ("RGB", "L"):
+        image = image.convert("RGB")
     buffer = BytesIO()
-    image.save(buffer, format="PNG")
-    encoded = base64.b64encode(buffer.getvalue()).decode("utf-8")
-    return encoded
+    image.save(buffer, format="JPEG", quality=90)
+    return base64.b64encode(buffer.getvalue()).decode("ascii")
 
 
 def upscale_grayscale_image(image, upscale_ratio: float = 1.5):
@@ -109,7 +118,9 @@ def cv2_gray_to_pil(image: np.ndarray) -> Image.Image:
 def preprocess_image_opencv_document(image):
     processed = pil_image_to_cv2_gray(image)
     processed = cv2.resize(processed, None, fx=1.8, fy=1.8, interpolation=cv2.INTER_CUBIC)
-    processed = cv2.fastNlMeansDenoising(processed, None, h=10, templateWindowSize=7, searchWindowSize=21)
+    # Median blur replaces fastNlMeansDenoising, which took ~6s per page here
+    # and was not the step that decided the winning variant.
+    processed = cv2.medianBlur(processed, 3)
 
     clahe = cv2.createCLAHE(clipLimit=2.2, tileGridSize=(8, 8))
     processed = clahe.apply(processed)
@@ -159,15 +170,20 @@ def split_image_vertically(image, segment_count: int = 4, overlap_ratio: float =
     return segments
 
 
-def build_ocr_image_variants(image) -> list[tuple[str, object]]:
-    return [
-        ("full_page", image.convert("RGB")),
-        ("opencv_document", preprocess_image_opencv_document(image)),
-        ("opencv_adaptive", preprocess_image_opencv_adaptive(image)),
-        ("sharpened", preprocess_image_for_ocr(image)),
-        ("threshold", preprocess_image_threshold(image)),
-        ("soft_contrast", preprocess_image_soft_contrast(image)),
-    ]
+OCR_VARIANT_BUILDERS: dict[str, Callable] = {
+    "full_page": lambda image: image.convert("RGB"),
+    "opencv_document": preprocess_image_opencv_document,
+    "opencv_adaptive": preprocess_image_opencv_adaptive,
+    "sharpened": preprocess_image_for_ocr,
+    "threshold": preprocess_image_threshold,
+    "soft_contrast": preprocess_image_soft_contrast,
+}
+OCR_VARIANT_ORDER: tuple[str, ...] = tuple(OCR_VARIANT_BUILDERS)
+
+
+def build_ocr_image_variants(image, names: Iterable[str] | None = None) -> list[tuple[str, object]]:
+    selected = OCR_VARIANT_ORDER if names is None else tuple(names)
+    return [(name, OCR_VARIANT_BUILDERS[name](image)) for name in selected if name in OCR_VARIANT_BUILDERS]
 
 
 def clean_ocr_text(text: str) -> str:
@@ -300,9 +316,48 @@ def merge_ocr_text_chunks(text_chunks: list[str]) -> str:
     return "\n".join(merged_lines)
 
 
-def score_ocr_text(text: str) -> float:
+def is_runaway_ocr_text(text: str) -> bool:
+    """True when OCR looped instead of reading the page.
+
+    Seen on a mostly blank signature page: one slice repeated a word
+    thousands of times, and another emitted 1. 2. 3. ... into the hundreds.
+    Real lines in this project stay under about 700 characters.
+    """
     stripped = text.strip()
     if not stripped:
+        return False
+
+    if any(len(line) > 1200 for line in stripped.splitlines()):
+        return True
+
+    words = [word for word in stripped.split() if word]
+    if not words:
+        return False
+
+    numeric = sum(1 for word in words if word.rstrip(".").isdigit())
+    if numeric == len(words) and numeric >= 4:
+        return True
+    if numeric >= 8 and numeric / len(words) >= 0.8:
+        return True
+
+    if len(words) >= 40:
+        counts: dict[str, int] = {}
+        for word in words:
+            key = normalize_line_for_dedup(word)
+            if not key:
+                continue
+            counts[key] = counts.get(key, 0) + 1
+        if counts:
+            top = max(counts.values())
+            if top >= 25 and top / len(words) >= 0.35:
+                return True
+
+    return False
+
+
+def score_ocr_text(text: str) -> float:
+    stripped = text.strip()
+    if not stripped or is_runaway_ocr_text(stripped):
         return -10_000.0
 
     score = 0.0
@@ -387,7 +442,7 @@ def build_chat_payload(model_name: str, image_b64: str) -> dict:
                     {
                         "type": "image_url",
                         "image_url": {
-                            "url": f"data:image/png;base64,{image_b64}",
+                            "url": f"data:image/jpeg;base64,{image_b64}",
                         },
                     },
                 ],
@@ -416,12 +471,27 @@ def extract_text_from_response(payload: dict) -> str:
     raise ValueError(f"Unsupported response content type: {type(content)!r}")
 
 
+_OCR_SESSION: requests.Session | None = None
+
+
+def _ocr_session() -> requests.Session:
+    global _OCR_SESSION
+    if _OCR_SESSION is None:
+        session = requests.Session()
+        # Pages, variants, and slices all post to the same host at once.
+        adapter = HTTPAdapter(pool_connections=16, pool_maxsize=16)
+        session.mount("http://", adapter)
+        session.mount("https://", adapter)
+        _OCR_SESSION = session
+    return _OCR_SESSION
+
+
 def call_paddle_ocr(api_base_url: str, model_name: str, image_b64: str, timeout: int = 180) -> str:
     endpoint = f"{api_base_url}/chat/completions"
     payload = build_chat_payload(model_name=model_name, image_b64=image_b64)
 
     LOGGER.info("Calling OCR API: %s", endpoint)
-    response = requests.post(
+    response = _ocr_session().post(
         endpoint,
         json=payload,
         headers={"Content-Type": "application/json"},
